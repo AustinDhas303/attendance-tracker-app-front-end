@@ -1,0 +1,163 @@
+.page{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  /* padding: 24px; */
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  background-color: #F8F9FC;
+}
+
+.login-container{
+  background-color: #fff;
+  /* max-width: 400px; */
+  width: 60%;
+  margin: 0 auto;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.input{
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.heading{ 
+  margin-bottom: 20px;
+  color: #343a40;
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup{
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.label{
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #495057;
+  display: block;
+}
+
+.input{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ced4da;
+  transition: border-color 0.3s;
+}
+
+.inputGroup .icon,
+.ioIosLock{
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #6c757d;
+}
+
+.button{
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #3F51B5;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+
+.input .icon{
+position: absolute;
+right: 30px;
+top: 33%;
+transform: translate(-50);
+display: inline-block;
+font-size: 20px;
+
+
+}
+.ioIosLock{
+position: absolute;
+right: 28px;
+top: 54%;
+transform: translate(-50);
+display: inline-block;
+font-size: 27px;
+}
+
+
+
+.log{
+
+  padding: 10px 10px;
+    padding-bottom: 10px;
+  padding-bottom: 5px;
+  font-size: 27px;
+  color: #4FC3F7;
+}
+.contents{
+  font-size: 30px;
+  border-radius: 4px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bolder;
+  color: #4FC3F7;
+  text-decoration: none;
+  margin: 0;
+  background-color: transparent;
+  text-align: center;
+  backdrop-filter: blur(4px);
+}
+
+
+/* .image{
+  height: 50px;
+width:70px;
+border-radius: 0px;
+position: relative;
+right: 10%;
+} */
+/* .button:hover{
+  background-color: #219150;
+} */
+
+.reg{
+  margin-top: 20px;
+  color: #3F51B5;
+  text-align: center;
+}
+
+/* .reg a{ color: inherit; text-decoration: none; font-weight: 600 } */
+/* .reg a:hover{ color: deepskyblue } */
+
+.error{
+  color: red;
+  font-size: 14px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* .logimage{
+  position: relative;
+  top: 20%;
+} */

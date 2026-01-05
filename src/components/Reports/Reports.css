@@ -1,0 +1,67 @@
+.report-container{
+  width: 100%;
+  /* margin: 20px auto; */
+  padding: 50px 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  /* background: linear-gradient(135deg, #6a11cb, #2575fc); */
+  border-radius: 10px;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.3);
+  color: white;
+  overflow: visible;
+  min-height: 100vh;
+}
+
+.report-controls{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.report-controls .input-group{ max-width:420px; }
+
+.report-controls .form-control,
+.report-controls .form-select{
+  background: rgba(255,255,255,0.95);
+  border: 1px solid rgba(0,0,0,0.08);
+  color: #222;
+  height: 36px;
+}
+
+.report-controls .input-group-text{ background: transparent; border: none; }
+
+.report-container .table{
+  background: rgba(255,255,255,0.02);
+  color: white;
+}
+
+.report-container .table thead th{
+  background: rgba(255,255,255,0.06);
+  /* color: #fff; */
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.report-container .table tbody td{
+  vertical-align: middle;
+}
+
+.report-container .text-muted{
+  color: rgba(71, 112, 236, 0.65) !important;
+}
+
+.report-container .py-6{ padding: 3rem 0; }
+
+@media (max-width: 800px){
+  .report-container{ padding: 20px; }
+  .report-controls .input-group{ max-width: 100%; flex: 1 1 100%; }
+  .report-controls .form-control, .report-controls .form-select{ width: 100%; }
+}
+
+.report-actions{ display:flex; gap:8px; align-items:center; }

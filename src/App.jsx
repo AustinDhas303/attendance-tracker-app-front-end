@@ -9,6 +9,7 @@ import Attendance from "./components/Attendance/Attendance";
 import Student from "./components/Student/Student";
 import User from "./components/User/User";
 import Reports from "./components/Reports/Reports";
+import Register from "./components/User/Register";
 
 function App() {
 
@@ -57,6 +58,7 @@ function App() {
             <div className="left">
               <Routes>
                 <Route path="/" element={<Login onLoginSuccess={handleLoginSuccess} />} />
+                <Route path="/register" element={<Register />} />
                 <Route path="*" element={<Navigate to="/" />} />
               </Routes>
             </div>
@@ -70,8 +72,9 @@ function App() {
               {/* <div style={{position:'fixed', top:8, right:8, background:'#fff', padding:'6px 8px', borderRadius:4, boxShadow:'0 1px 3px rgba(0,0,0,0.2)'}}>Auth: {String(authenticated)}</div> */}
 
               <Routes>
-                <Route path="/dashboard" element={<Dashboard/>} />
+                <Route path="/dashboard" element={<ProtectedRoute element={<Dashboard />} />} />
                 <Route path="/attendance" element={<Attendance />} />
+                <Route path="/register" element={<Register />} />
                 <Route path="/user" element={<User />} />
                 <Route path="/student" element={<ProtectedRoute element={<Student />} />} />
                 <Route path="/reports" element={<ProtectedRoute element={<Reports />} />} />

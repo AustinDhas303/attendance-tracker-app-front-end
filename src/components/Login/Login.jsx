@@ -118,7 +118,7 @@ const Login = ({ onLoginSuccess }) => {
           {errorMessage && <p className="error">{errorMessage}</p>}
         </form>
 
-        <p className="reg">Don't have an account? <Link to="/registrationForm" className="reg">Register Now</Link></p>
+        <p className="reg">Don't have an account? <Link to="/register" className="reg">Register Now</Link></p>
       </div>
     </div>
   );

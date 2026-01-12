@@ -11,6 +11,7 @@ const Register = () => {
     address: "",
     contactNo: "",
     emailId: "",
+    status: 1,
     password: "",
     role: {
         roleId: 2
@@ -49,6 +50,7 @@ const Register = () => {
         address: "",
         contactNo: "",
         emailId: "",
+        status: 1,
         password: "",
         confirmPassword: "",
       });

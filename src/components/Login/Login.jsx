@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-import api from "../utils/api";
+import api, { publicApi } from "../utils/api";
 import "./Login.css";
 console.log('Login module loaded');
 
@@ -27,7 +27,7 @@ const Login = ({ onLoginSuccess }) => {
     setIsLoading(true);
 
     try {
-      const response = await api.post(
+      const response = await publicApi.post(
         "/api/v1/jwt/login",
         login
       );

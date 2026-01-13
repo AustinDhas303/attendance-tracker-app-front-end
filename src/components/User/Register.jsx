@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-import api from "../utils/api";
+import api, { publicApi } from "../utils/api";
 import "./Register.css";
 
 const Register = () => {
@@ -41,7 +41,7 @@ const Register = () => {
     setIsLoading(true);
 
     try {
-      const response = await api.post("/api/v1/user/register", formData);
+      const response = await publicApi.post("/api/v1/user/register", formData);
       console.log("Registration successful:", response.data);
       setSuccessMessage("Registration successful! Redirecting to login...");
       setFormData({

@@ -14,7 +14,7 @@ const Register = () => {
     status: 1,
     password: "",
     role: {
-        roleId: 2
+      roleId: 2
     }
   });
 
@@ -58,6 +58,9 @@ const Register = () => {
       setTimeout(() => navigate("/login"), 1500);
     } catch (err) {
       console.error("Registration failed:", err);
+      console.error("Status:", err?.response?.status);
+      console.error("Body:", err?.response?.data);
+      console.error("Headers:", err?.response?.headers);
       setErrorMessage(
         err?.response?.data?.message || "Registration failed. Please try again."
       );
